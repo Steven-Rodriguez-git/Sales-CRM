@@ -14,7 +14,7 @@ async function validateIdentity(user: Prospect) {
 }
 
 async function validateBackground(user: Prospect) {
-  await Timeout.set(5_000);
+  await Timeout.set(4_000);
   return user.document % 10 < 5
     ? VALIDATION_STATUS.SUCCESS
     : VALIDATION_STATUS.FAILED;

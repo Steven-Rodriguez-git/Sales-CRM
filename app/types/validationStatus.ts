@@ -1,11 +1,11 @@
 export enum VALIDATION_STATUS {
-  SUCCESS = "Sucess",
-  PENDING = "Pending",
-  FAILED = "Failed",
+  PENDING = "PENDING",
+  SUCCESS = "SUCCESS",
+  FAILED = "FAILED",
 }
 
 export interface ProspectValidationStatus {
-  identityValidation: VALIDATION_STATUS;
   backgroundValidation: VALIDATION_STATUS;
+  identityValidation: VALIDATION_STATUS;
   scoreValidation: VALIDATION_STATUS;
 }

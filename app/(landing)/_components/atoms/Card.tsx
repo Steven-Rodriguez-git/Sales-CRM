@@ -11,6 +11,7 @@ import CheckMarkIcon from "../icons/CheckMarkIcon";
 import ErrorIcon from "../icons/ErrorIcon";
 import { Prospect } from "@/app/types/Prospect";
 
+
 import ReactTooltip, { Tooltip } from "react-tooltip";
 
 export type CardProps = Prospect &
@@ -20,10 +21,20 @@ export type CardProps = Prospect &
   };
 
 const CardSurface = styled.div`
-  padding: 24px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
   display: flex;
-  margin: 8px 0px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+  }
 `;
 
 const InfoContainer = styled.div`
@@ -38,30 +49,38 @@ const PipelinesContainer = styled.div`
 `;
 
 const Title = styled.p`
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 1,2 rem;
+  line-height: 1.5rem;
+  margin-bottom: 16px;
 `;
 
 const Text = styled.p`
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1rem;
-  margin-bottom: 8px;
-  margin-top: 0;
+  margin-bottom: 12px;
+  color: #4b5563;
 `;
 
 const ValidateButton = styled.button`
-  padding: 16px 12px;
-  background: transparent;
-  border-radius: 12px;
+  padding: 14px 16px;
+  border-radius: 10px;
   cursor: pointer;
-  background: #03045e;
-  box-shadow: 0px 1px 1px 1px rgba(16, 16, 16, 0.2);
-  border: 0.5px;
+  background: #3c6af0;
   color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  box-shadow: 0px 2px 4px rgba(16, 16, 16, 0.2);
+  border: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #2b59e5;
+    box-shadow: 0px 4px 8px rgba(16, 16, 16, 0.25);
+  }
+
   &:active {
-    box-shadow: 0px 1px 1px 2px rgba(16, 16, 16, 0.2);
+    box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.3);
   }
 `;
 
@@ -87,14 +106,14 @@ const PendingElement = ({ tooltipId }: { tooltipId: string }) => (
 
 const CheckMarkElement = ({ tooltipId }: { tooltipId: string }) => (
   <StyledCheckMarkIcon
-    fill="#6A9955"
+    fill="#01af02"
     data-tooltip-id={tooltipId}
     style={{ outline: "none !important" }}
   />
 );
 
 const ErrorElement = ({ tooltipId }: { tooltipId: string }) => (
-  <StyledErrorIcon fill="#B80F0A" data-tooltip-id={tooltipId} className="" />
+  <StyledErrorIcon fill="#DB0000" data-tooltip-id={tooltipId} className="" />
 );
 
 function getComponentFromStatus(status: VALIDATION_STATUS, tooltipId: string) {

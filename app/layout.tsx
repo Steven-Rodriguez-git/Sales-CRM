@@ -21,6 +21,7 @@ export default function RootLayout({
         <body
           style={{
             fontFamily: "var(--font-roboto)",
+            backgroundColor: "#f6faff",
           }}
           className={`${roboto.variable}`}
         >
