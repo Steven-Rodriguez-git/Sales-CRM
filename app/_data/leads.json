@@ -1,0 +1,34 @@
+{
+  "leads": [
+    {
+      "name": "Juan Pérez",
+      "email": "juanperez@email.com",
+      "phone": "+52 123456789",
+      "document": 12345678
+    },
+    {
+      "name": "María Camila López Rodriguez",
+      "email": "marialopez@email.com",
+      "phone": "+52 987654321",
+      "document": 123456789
+    },
+    {
+      "name": "Carlos Gómez",
+      "email": "carlosgomez@email.com",
+      "phone": "+52 555666777",
+      "document": 1234567
+    },
+    {
+      "name": "Marcos Carlitos",
+      "email": "carlosgomez@email.com",
+      "phone": "+52 555666777",
+      "document": 1234567890
+    },
+    {
+      "name": "Marcos Carlitos Antonio",
+      "email": "carlosgomez@email.com",
+      "phone": "+52 555666777",
+      "document": 12345678901
+    }
+  ]
+}
