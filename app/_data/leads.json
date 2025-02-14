@@ -1,0 +1,46 @@
+{
+  "leads": [
+    {
+      "name": "Juan David Pérez Malavera",
+      "email": "juanperez@email.com",
+      "phone": "+57 123456789",
+      "document": 12345678
+    },
+    {
+      "name": "María Camila López Melo",
+      "email": "marialopez@email.com",
+      "phone": "+57 987654321",
+      "document": 123456789
+    },
+    {
+      "name": "Carlos Antonio Gómez Pérez",
+      "email": "carlosgomez@email.com",
+      "phone": "+57 555666777",
+      "document": 1234567
+    },
+    {
+      "name": "Marcos Carlitos Pérez Sosa",  
+      "email": "carlosperez@email.com",
+      "phone": "+57 555666777",
+      "document": 1234567890
+    },
+    {
+      "name": "Marcos Carlitos Antonio",
+      "email": "marcocar@email.com",
+      "phone": "+57 555666777",
+      "document": 12345624901
+    },
+    {
+      "name": "Laura María López Rodríguez",
+      "email": "laumalo@email.com",
+      "phone": "+57 555666777",
+      "document": 1214467894
+    },
+    {
+      "name": "Camila Antonieta Isaza Pérez",
+      "email": "camiaasd@email.com",
+      "phone": "+57 555666777",
+      "document": 1235267892
+    }
+  ]
+}
