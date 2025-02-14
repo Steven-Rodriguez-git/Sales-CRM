@@ -11,7 +11,6 @@ import CheckMarkIcon from "../icons/CheckMarkIcon";
 import ErrorIcon from "../icons/ErrorIcon";
 import { Prospect } from "@/app/types/Prospect";
 
-
 import ReactTooltip, { Tooltip } from "react-tooltip";
 
 export type CardProps = Prospect &
@@ -26,14 +25,21 @@ const CardSurface = styled.div`
   background: white;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
   display: flex;
+  flex-direction: column;
+  gap: 12px;
   justify-content: space-between;
   align-items: center;
   margin: 16px 0px;
   transition: all 0.3s ease;
 
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 0;
+  }
+
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
   }
 `;
 
@@ -50,7 +56,7 @@ const PipelinesContainer = styled.div`
 
 const Title = styled.p`
   font-weight: 600;
-  font-size: 1,2 rem;
+  font-size: 1, 2 rem;
   line-height: 1.5rem;
   margin-bottom: 16px;
 `;
