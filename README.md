@@ -30,17 +30,9 @@ Se utilizó para la simulación de las peticiones web y el correcto funcionamien
 # Estructura del proyecto: 
 
 Los test se realizaron es la carpeta conjunta para su facil acceso  y legibilidad __test__
-/src/app
-    ├── _data: simulación básica de una base de datos en un archivo json
-    ├── (landing) :simulación de ruta falsa para mejor organización
-        ├──_components: Elementos reutilizables dentro del código
-            ├──atoms: contiene lo elementos más basicos que pueden ser reutilizados varias veces
-            ├──hooks:  Contienes la funcionalidad detras de la logica, la validacion del usuario y un debounce para no sobrecarga la pagina en caso de funcionamiento incorrecto
-            ├──icons: Contiene los iconos utilizados en la aplicacion en formato SVG pasado a JSX para su facil importación
-            ├──molecules: Contiene los  elementos que con la utilizacion de "los atomos" crea elemento mas grandes reutilizables 
-            ├──providers: Crea el contexto para que React maneje los leads y prospects en la pagina
-        ├──page.tsx: Crea la pagina final con el esqueleto en HTML y la utilización de "las moleculas" como elementos ya  construidos para la carga final de la página
-        ├──types:interfaces para su reutilización
+```
+/src/app ├── _data/ # Simulación básica de una base de datos en un archivo JSON ├── (landing)/ # Simulación de ruta falsa para mejor organización ├── _components/ # Elementos reutilizables dentro del código ├── atoms/ # Elementos más básicos reutilizables ├── hooks/ # Funcionalidad detrás de la lógica y validación ├── icons/ # Iconos en formato SVG convertidos a JSX ├── molecules/ # Elementos compuestos usando "átomos" ├── providers/ # Contexto para gestionar Leads y Prospects ├── page.tsx # Esqueleto HTML y uso de "moléculas" en la página ├── types/ # Interfaces reutilizables
+```
 
 # Instalación y ejecucion
 
@@ -105,4 +97,4 @@ npm test
 - Tabs en movil que permitan alternar entre Leads y Prospects de una mejor manera
 - Separación más clara entre Leads y Prospects
 - Suponiendo que el usuario tenga esta posibilidad,  poder eliminar, archivar o agregar leads, o en caso de que no la tenga y de ser util que el sistema archive los leads que no pasaron las pruebas
-- Test mucho mas extensivos
+- Test mucho mas extensivos con una cobertura total
