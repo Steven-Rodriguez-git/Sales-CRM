@@ -15,8 +15,8 @@ A card displaying relevant information about Leads and Prospects.
 An option to automatically validate Leads, allowing them to transition into the Prospect category.
 A list displaying the validated Prospects.
 
+![alt text](image-2.png)
 
-![alt text](image.png)
 
 The first step in development is to build a basic React with Next.js application for the project. The goal is to apply atomicity and OOP principles, along with composition patterns used in React, which will enable easy scalability of the project in the future.
 
@@ -100,10 +100,10 @@ npm test
 - The application was designed to be minimalistic and user-friendly, avoiding unnecessary elements, cluttered content, or extra features that do not contribute to the application's core functionality.
 
 /// Diseño final aplicación de escritorio
-![alt text](image-1.png)
+![alt text](image.png)
 
 /// Diseño final aplicación movil
-![alt text](image-2.png)
+![alt text](image-1.png)
 
 # Test
 
