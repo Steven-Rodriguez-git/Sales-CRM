@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo from "../icons/logo";
+import Logo from "../../components/atoms/icons/Logo";
 
 const HeaderSurface = styled.div`
   align-items: items-center;
@@ -17,11 +17,6 @@ const Text = styled.h1`
 
 
 
-const Divider = styled.hr`
-  width: 100%; 
-  border-top: 1px solid #d1d5db;
-`;
-
 export default function Header () {
   return (
     <HeaderSurface>
@@ -29,7 +24,6 @@ export default function Header () {
         <Logo width={32} height={32} fill="#1D4ED8" />
         <Text>SALES</Text>
         </NameLogo>
-      <Divider/>
     </HeaderSurface>
   );
 };
