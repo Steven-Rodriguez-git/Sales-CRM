@@ -99,10 +99,10 @@ npm test
 
 - The application was designed to be minimalistic and user-friendly, avoiding unnecessary elements, cluttered content, or extra features that do not contribute to the application's core functionality.
 
-/// Diseño final aplicación de escritorio
+/// Desktop app desing
 ![alt text](image.png)
 
-/// Diseño final aplicación movil
+/// Mobile app desing
 ![alt text](image-1.png)
 
 # Test
