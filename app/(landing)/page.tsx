@@ -1,17 +1,36 @@
 "use client";
 
 import styled from "styled-components";
-import ProspectCard from "./_components/molecules/ProspectCard";
-import leads from "../_data/leads.json";
+
+import leads from "@/data/leads.json";
 import {
-  ProspectsContext,
+
   ProspectsProvider,
-} from "./providers/ProspectsProvider";
-import Header from "./_components/molecules/Header";
-import SearchBar from "./_components/molecules/SearchBar";
-import { useMemo } from "react";
-import ProspectList from "./_components/molecules/ProspectList";
-import LeadsList from "./_components/molecules/LeadsList";
+} from "@/context/ProspectsProvider";
+import Header from "@/components/molecules/Header";
+import SearchBar from "@/components/molecules/SearchBar";
+
+import ProspectList from "@/components/organism/ProspectList";
+import LeadsList from "@/components/organism/LeadsList";
+
+export default function Home() {
+  return (
+    <ProspectsProvider>
+      <ParentContainer>
+        <Header />
+        <SearchBar />
+        <ColumnsContainer>
+          <Column>
+            <LeadsList leads={leads.leads} />
+          </Column>
+          <Column>
+            <ProspectList leads={leads.leads} />
+          </Column>
+        </ColumnsContainer>
+      </ParentContainer>
+    </ProspectsProvider>
+  );
+}
 
 const ParentContainer = styled.div`
   max-width: 1400px;
@@ -32,22 +51,3 @@ const ColumnsContainer = styled.div`
 const Column = styled.div`
   flex: 1;
 `;
-
-export default function Home() {
-  return (
-    <ProspectsProvider>
-      <ParentContainer>
-        <Header />
-        <SearchBar />
-        <ColumnsContainer>
-          <Column>
-            <LeadsList leads={leads.leads} />
-          </Column>
-          <Column>
-            <ProspectList leads={leads.leads} />
-          </Column>
-        </ColumnsContainer>
-      </ParentContainer>
-    </ProspectsProvider>
-  );
-}

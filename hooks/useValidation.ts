@@ -1,8 +1,8 @@
-import { Prospect } from "@/app/types/Prospect";
+import { Prospect } from "@/types/Prospect";
 import {
   ProspectValidationStatus,
   VALIDATION_STATUS,
-} from "@/app/types/validationStatus";
+} from "@/types/validationStatus";
 import { useQuery } from "@tanstack/react-query";
 import Timeout from "await-timeout";
 

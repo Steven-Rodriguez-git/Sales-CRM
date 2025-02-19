@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent, act } from "@testing-library/react"; 
-import ProspectCard from "../ProspectCard";
+import ProspectCard from "../ValidateCard";
 import { VALIDATION_STATUS } from "@/app/types/validationStatus";
 import { ProspectsContext } from "@/app/(landing)/providers/ProspectsProvider";
 import "@testing-library/jest-dom";
