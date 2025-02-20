@@ -10,7 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.66.0",
+    "@tanstack/react-query": "^5.66.7",
+    "@testing-library/react-hooks": "^8.0.1",
     "await-timeout": "^1.1.1",
     "crm-addi": "file:",
     "next": "15.1.7",

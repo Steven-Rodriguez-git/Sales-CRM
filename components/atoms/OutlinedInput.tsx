@@ -27,15 +27,17 @@ const Container = styled.div`
 
 interface Props {
   handleOnChange: (x: string) => void;
+  placeholder: string;
+  text: string;
 }
 
-export default function OutlinedInput({ handleOnChange }: Props) {
+export default function OutlinedInput({ handleOnChange, placeholder, text }: Props) {
   return (
     <Container>
-      <Text>Filter:</Text>
+      <Text>{text}</Text>
       <InputElement
         onChange={(e) => handleOnChange(e.target.value)}
-        placeholder="Find by name or document"
+        placeholder={placeholder}
       />
     </Container>
   );
