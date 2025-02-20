@@ -41,15 +41,25 @@ Used for simulating web requests and ensuring proper logic functionality behind 
 
 /src/app
 ├── _data/         # Basic simulation of a database using a JSON file
+
 ├── (landing)/     # Fake route simulation for better organization
+
 ├── page.tsx       # HTML skeleton and use of "molecules" on the page
+
 ├── _components/   # Reusable elements within the code
+
 ├── atoms/         # Basic reusable elements
+
 ├── icons/         # SVG icons converted to JSX
+
 ├── molecules/     # Components composed of "atoms"
+
 ├── Organim/       # Components composed of "atoms" and "molecules"
+
 ├── hooks/         # Logic and validation functionality
+
 ├── Contex/        # Context for managing Leads and Prospects
+
 ├── types/         # Reusable interfaces
 
 # Installation and Execution
