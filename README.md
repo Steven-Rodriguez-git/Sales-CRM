@@ -37,18 +37,19 @@ Styled Components were chosen because of the preference for semantic HTML, which
 React Query
 Used for simulating web requests and ensuring proper logic functionality behind validations.
 
-# Estructura del proyecto: 
+# Proyect Structure base on atomic  desing
 
 /src/app
 ├── _data/         # Basic simulation of a database using a JSON file
 ├── (landing)/     # Fake route simulation for better organization
+├── page.tsx       # HTML skeleton and use of "molecules" on the page
 ├── _components/   # Reusable elements within the code
 ├── atoms/         # Basic reusable elements
-├── hooks/         # Logic and validation functionality
 ├── icons/         # SVG icons converted to JSX
 ├── molecules/     # Components composed of "atoms"
-├── providers/     # Context for managing Leads and Prospects
-├── page.tsx       # HTML skeleton and use of "molecules" on the page
+├── Organim/       # Components composed of "atoms" and "molecules"
+├── hooks/         # Logic and validation functionality
+├── Contex/        # Context for managing Leads and Prospects
 ├── types/         # Reusable interfaces
 
 
