@@ -1,8 +1,8 @@
 import React from "react";
 import { render, screen, fireEvent, act } from "@testing-library/react"; 
 import ProspectCard from "../ValidateCard";
-import { VALIDATION_STATUS } from "@/app/types/validationStatus";
-import { ProspectsContext } from "@/app/(landing)/providers/ProspectsProvider";
+import { VALIDATION_STATUS } from "@/types/validationStatus";
+import { ProspectsContext } from "@/context/ProspectsProvider";
 import "@testing-library/jest-dom";
 
 const mockProspect = {
@@ -13,11 +13,13 @@ const mockProspect = {
 };
 
 const mockContextValue = {
+  filter: "",
+  setFilter: jest.fn(),
   prospects: {},
   addNewProspect: jest.fn(),
 };
 
-jest.mock("../../hooks/useValidation.ts", () => ({
+jest.mock("@/hooks/useValidation.ts", () => ({
   useProspectValidation: jest.fn(() => ({
     backgroundValidation: VALIDATION_STATUS.PENDING,
     identityValidation: VALIDATION_STATUS.PENDING,

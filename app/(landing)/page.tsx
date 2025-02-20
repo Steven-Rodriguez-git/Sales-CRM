@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <ProspectsProvider>
       <ParentContainer>
-        <Header />
-        <SearchBar />
+        <Header text="SALES" />
+        <SearchBar placeholder="Find by name or document" text="Filter:" />
         <ColumnsContainer>
           <Column>
             <LeadsList leads={leads.leads} />
